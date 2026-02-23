@@ -51,4 +51,32 @@ def add_product(products):
     products.append(product)
     print("Them san pham thanh cong!")
 
+def update_product(products):
+    pid = input("Nhap ID can sua: ")
+
+    for p in products:
+        if p["id"] == pid:
+            p["name"] = input("Ten moi: ")
+            p["brand"] = input("Thuong hieu moi: ")
+            p["price"] = int(input("Gia moi: "))
+            p["quantity"] = int(input("So luong moi: "))
+            print("Cap nhat thanh cong!")
+            return
+
+    print("Khong tim thay san pham!")
+
+
+def delete_product(products):
+    pid = input("Nhap ID can xoa: ")
+
+    for p in products:
+        if p["id"] == pid:
+            products.remove(p)
+            print("Da xoa san pham!")
+            return
+
+    print("Khong tim thay san pham!")
+
+
+
 
