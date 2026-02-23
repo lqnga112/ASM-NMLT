@@ -73,7 +73,7 @@ def delete_product(products):
     for p in products:
         if p["id"] == pid:
             products.remove(p)
-            print("Da xoa san pham!")
+            print("Da xoa san pham thanh cong!")
             return
 
     print("Khong tim thay san pham!")
@@ -104,6 +104,7 @@ def display_all_products(products):
 
     for p in products:
         print(p["id"], p["name"], p["brand"], p["price"], p["quantity"])
+
 
 
 
