@@ -50,7 +50,7 @@ def add_product(products):
     }
 
     products.append(product)
-    print("Them san pham thanh cong!")
+    print("Da them san pham thanh cong!")
 
 def update_product(products):
     pid = input("Nhap ID can sua: ")
@@ -64,7 +64,7 @@ def update_product(products):
             print("Cap nhat thanh cong!")
             return
 
-    print("Khong tim thay san pham!")
+    print("Khong the tim thay san pham!")
 
 
 def delete_product(products):
@@ -98,6 +98,7 @@ def display_all_products(products):
 
     for p in products:
         print(p["id"], p["name"], p["brand"], p["price"], p["quantity"])
+
 
 
 
