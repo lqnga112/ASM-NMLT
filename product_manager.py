@@ -84,7 +84,13 @@ def search_product_by_name(products):
 
     for p in products:
         if key in p["name"].lower():
-            print(p)
+            print(
+                p["id"], "|",
+                p["name"], "|",
+                p["brand"], "|",
+                p["price"], "|",
+                p["quantity"]
+            )
             found = True
 
     if not found:
@@ -98,6 +104,7 @@ def display_all_products(products):
 
     for p in products:
         print(p["id"], p["name"], p["brand"], p["price"], p["quantity"])
+
 
 
 
