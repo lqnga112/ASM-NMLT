@@ -34,4 +34,21 @@ def generate_new_id(products):
     else:
         return "LT" + str(number)
 
+def add_product(products):
+    name = input("Ten san pham: ")
+    brand = input("Thuong hieu: ")
+    price = int(input("Gia: "))
+    quantity = int(input("So luong: "))
+
+    product = {
+        "id": generate_new_id(products),
+        "name": name,
+        "brand": brand,
+        "price": price,
+        "quantity": quantity
+    }
+
+    products.append(product)
+    print("Them san pham thanh cong!")
+
 
