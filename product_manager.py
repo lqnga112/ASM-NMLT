@@ -1,4 +1,5 @@
 # product_manager.py
+# Phien ban quan ly san pham
 # Xu ly du lieu san pham POLY-LAP
 
 import json
@@ -97,6 +98,7 @@ def display_all_products(products):
 
     for p in products:
         print(p["id"], p["name"], p["brand"], p["price"], p["quantity"])
+
 
 
 
