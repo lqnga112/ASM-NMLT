@@ -28,7 +28,10 @@ def main():
             display_all_products(products)
         elif choice == "0":
             save_data(products)
+            print("Da luu du lieu!")
+            print("Thoat chuong trinh!")
             break
 
 if __name__ == "__main__":
     main()
+
