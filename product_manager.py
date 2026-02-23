@@ -22,3 +22,16 @@ def save_data(products):
     json.dump(products, f, ensure_ascii=False, indent=4)
     f.close()
 
+def generate_new_id(products):
+    if len(products) == 0:
+        return "LT01"
+
+    last_id = products[-1]["id"]
+    number = int(last_id[2:]) + 1
+
+    if number < 10:
+        return "LT0" + str(number)
+    else:
+        return "LT" + str(number)
+
+
