@@ -16,3 +16,9 @@ def load_data():
         return data
     except:
         return []
+
+def save_data(products):
+    f = open(DATA_FILE, "w", encoding="utf-8")
+    json.dump(products, f, ensure_ascii=False, indent=4)
+    f.close()
+
