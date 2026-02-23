@@ -29,3 +29,6 @@ def main():
         elif choice == "0":
             save_data(products)
             break
+
+if __name__ == "__main__":
+    main()
