@@ -77,6 +77,26 @@ def delete_product(products):
 
     print("Khong tim thay san pham!")
 
+def search_product_by_name(products):
+    key = input("Nhap ten can tim: ").lower()
+    found = False
+
+    for p in products:
+        if key in p["name"].lower():
+            print(p)
+            found = True
+
+    if not found:
+        print("Khong tim thay san pham!")
+
+
+def display_all_products(products):
+    if len(products) == 0:
+        print("Kho rong!")
+        return
+
+    for p in products:
+        print(p["id"], p["name"], p["brand"], p["price"], p["quantity"])
 
 
 
